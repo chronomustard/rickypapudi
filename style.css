@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;&display=swap');
+
+html{
+    font-size: 20px;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background: #000;
+}
+
+.navbar-dark{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background: #000000;
+}
+.navbar-nav > li{
+    padding-left:30px;
+    padding-right:30px;
+  }
+.text-light{
+    background:#000000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color:white;
+}
+.large-rp{
+    font-size: 64px;
+}
+.bg-rp-yellow{
+    background:#FCD843;
+    color:#000000;
+}
+.bg-rp-blue{
+    background:#A5E2F8;
+    color:#000000;
+}
+.background-color{
+    background:#000000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.parallax {
+    background-attachment: scroll;}
+.carousel {
+    font-family: 'Roboto', sans-serif;
+}
+.bold {
+    font-weight: 500;
+}
+.card {
+    border: none;
+}
+.regular {
+    font-weight: 300;
+}
+.text-rp-black{
+    font-family: 'Roboto', sans-serif;
+    color:#000;
+}
+.text-rp-white{
+    font-family: 'Roboto', sans-serif;
+    color:#fff;
+}
+.rp-default{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+.no-padding{
+    padding: 0px !important;
+   }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px !important;;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000000;
+    width: 10px !important;;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #FFF;
+    width: 10px !important;;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #FFF;
+    width: 10px !important;;
+  }
+
+div.navbar *::-moz-selection {
+    background: none !important;
+}
+div.navbar *::selection {
+    background: none !important;
+}
+html {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;    
+}
+.card-rp{
+    background: #FFF; 
+    font-family: 'Roboto', sans-serif;
+}
+.large{
+    font-size:x-large;
+}
+.align-nav-rp{
+    vertical-align: middle;
+}
