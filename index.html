@@ -13,9 +13,14 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>  
+            AOS.init();
+        </script>
     <nav class="navbar navbar-expand-lg navbar-dark py-4">
         <div class="container">
             <a href="#" class="navbar-brand">
@@ -34,16 +39,17 @@
             <div class="collapse navbar-collapse text-white-100 " id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
+                        <a href="index.html" class="nav-link fs-6">Home</a>
+                    <!-- <li class="nav-item">
+                        <a href="#" class="nav-link fs-6">Archive</a> -->
+                    </li>
+                    <li class="nav-item">
                         <a href="#about" class="nav-link fs-6">About</a>
                     <!-- <li class="nav-item">
                         <a href="#" class="nav-link fs-6">Archive</a> -->
                     </li>
                     <li class="nav-item">
-                        <a
-                        href="mailto:ricky.rahman@ui.ac.id"
-                        target="_blank"
-                        class="nav-link fs-6">
-                        Get in touch</a>
+                        <a href="projects.html" class="nav-link fs-6">Projects</a>
                     </li>
                 </ul>
             </div>
@@ -52,19 +58,19 @@
 
     <div class="section text-light p-4 text-center "></div>
     <div class="section text-light p-5 text-center "></div>
-    <div class="section text-light p-lg-3 text-center "></div>
+    <div class="section text-light p-lg-4 text-center "></div>
 
     <section>
         <div class="section text-light p-2 p-lg-3 text-start p-3">
             <div class="container rp-default large-rp">
-                <p class="text-start animate__animated animate__fadeInUp animate__slower">Hello, world!</p>
+                <p class="text-start" data-aos="fade-up" data-aos-duration="1500">Hello world!</p>
             </div>
             <div class="container rp-default fs-3 ">
-                <p class="text-start text-light animate__animated animate__fadeInUp animate__slower animate__delay-1s">I’m Ricky Papudi, a <b>programmer</b>, <b>engineer</b>, and <b>designer</b> currently studying in University of Indonesia.</p>
+                <p class="text-start text-light" data-aos="fade-up" data-aos-duration="1500">My name is Ricky Papudi. I'm a <b>programmer</b> and <b>engineer</b> currently studying in University of Indonesia.</p>
         
             </div>
-            <div class="container rp-default fs-3 pt-3 animate__animated animate__fadeInUp animate__slower animate__delay-2s">
-                <button type="button" class="btn btn-light ext-rp-black fs-3 hvr-grow"><a
+            <div class="container rp-default fs-3 pt-3" data-aos="fade-up" data-aos-duration="1500">
+                <button type="button" class="btn btn-light text-center fs-3 hvr-grow fw-normal"><a
                     href="mailto:ricky.rahman@ui.ac.id"
                     target="_blank"
                     class="nav-link">
@@ -78,38 +84,83 @@
     <div class="section text-light p-5 text-center "></div>
     
     
-    <div class="section p-2 p-lg-4"></div> 
-    <div class="section p-lg-5" id="about"></div>
+    <div class="section p-2 p-lg-5"></div> 
+    <div class="section p-lg-2"></div>
 
     <section>
-       <div class="section p-5"></div> 
-       <div class="section p-4">
+ 
+        <div class="section">
             <div class="container text-rp-black large-rp">
-                <div class="row text-lg-start fs-6">
-                    <div class="col-md-12 col-lg-4 col order-1 order-lg-2 text-lg-start p-3">
-                        <div class=""></div>
-                        <img src="img/Ricky.png" width="270" height="270" alt="" class="hvr-grow mt-lg-3">
-                    </div>
-                    <div class="col-md-12 col-lg-8 order-2 p-3">
-                        <div class="container"></div>
-                        <p class="text-rp-black animate__animated animate__fadeInUp animate__slower large-rp">About
-                        </p>
-                        <div class="fs-4"><p class="animate__animated animate__fadeInUp animate__slower">I am passionate about everything that has to do with technology and art. I enjoy experimenting and tinkering projects with new technology to convey meaningful narratives to it.
-                        </p></div>
-                        
-                            
+                <div class="text-lg-start fs-6">
+                    <p class="text-rp-black large-rp" data-aos="fade-up" data-aos-duration="1500">
+                        Featured Projects
+                    </p>
+
+                    <div class="section p-2"></div> 
+
+                    <div class="row" style="filter:saturate(0);">
+                        <div class="col-12 col-lg-6 p-2" data-aos="fade-up" data-aos-duration="1500" style="filter:saturate(0);">
+                            <div class="card card-rp-black text-rp-black" style="border-radius: 25px;">
+                                <img src="img/projects/AquariumTempController/IoT_Aquarium_Cover.png" class="card-img" style="width:100%; height:350px; object-fit: cover; filter:brightness(40%); border-radius: 25px;" alt="...">
+                                <div class="card-img-bottom p-3 " style="border-radius: 25px;">
+                                  <h5 class="card-title ">IoT Aquarium Temperature Controller</h5>
+                                  <p class="card-text ">A system that is capable in adjusting aquatic environment temperature. It is created with Wemos D1 Mini microcontroller and Blynk. This device is able to adjust temperature inside a 19L volume aquarium from 25°C to 31°C. It is also able to datalog and access its controls wirelessly using Blynk.</p>
+                                </div>
+                            </div>
                         </div>
-                </div>
-       </div> 
+                        <div class="col-12 col-lg-6 p-2">
+                            <div class="card card-rp-black text-rp-black" data-aos="fade-up" data-aos-duration="1500" style="border-radius: 25px;">
+                                <img src="img/projects//EmissionChecked/EmissionChecked_Cover.png " class="card-img" style="width:100%; height:350px; object-fit: cover; filter:brightness(40%); border-radius: 25px;" alt="...">
+                                <div class="card-img-bottom p-3" style="border-radius: 25px;">
+                                  <h5 class="card-title">
+                                    EmissonChecked: Industrial Emission Quality Classifier</h5>
+                                  <p class="card-text">
+                                    A classifier for industrial emission in accordance with a policy by Kementrian Lingkungan Hidup dan Kehutanan (KLHK). It is a data structure-based program using binary tree sort and search algorithm. It is created with C programming language.
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container rp-default fs-3 pt-3 text-center" data-aos="fade-up" data-aos-duration="1500">
+                            <button type="button" class="btn btn-dark fs-3 hvr-grow text-center fw-normal" style="background-color:black;">
+                                <a href="projects.html" class="nav-link fs-3">See More!</a>
+                            </button>
+                        </div>
+                    </div>
+            </div>
+        </div> 
     </section>
 
+    <div class="section p-5"></div>
+    <div class="section p-2"  id="about"></div>
+
+    <section>
+        <div class="section p-5"></div> 
+        <div class="section p-4">
+             <div class="container text-rp-black large-rp">
+                 <div class="row text-lg-start fs-6">
+                     <div class="col-md-4 col order-1 order-lg-2 text-lg-start p-3">
+                         <div class=""></div>
+                         <img src="img/Ricky.png" width="270" height="270" alt="" class="hvr-grow mt-lg-3 large-rp" data-aos="fade-up" data-aos-duration="1500">
+                     </div>
+                     <div class="col-md-8 order-2 p-3">
+                         <div class="container"></div>
+                         <p class="text-rp-black large-rp" data-aos="fade-up" data-aos-duration="1500">About
+                         </p>
+                         <div class="fs-4"><p class="" data-aos="fade-up" data-aos-duration="1500">I am passionate about everything that has to do with technology and art. I enjoy experimenting and tinkering projects with new technology to convey meaningful narratives to it.
+                         </p></div>
+                         
+                             
+                         </div>
+                 </div>
+        </div> 
+     </section>
 
     <div class="section p-5"></div>
     <div class="section p-3"></div>
 
     <section>
         
-        <footer class="ime-default text-center">
+        <footer class="text-black text-center">
             <!-- Grid container -->
             <div class="container">
               <!-- Section: Social media -->
@@ -170,14 +221,14 @@
             <!-- Copyright -->
             <div class="text-center" style="background-color: rgba(0, 0, 0, 0);">
               <p class="">© 2022 Copyright
-              <a class="text-black" href="https://www.linkedin.com/in/ricky-papudi/">Ricky Papudi</a></p>
+              <a class="text-black" href="https://www.instagram.com/rickkyzzz/?hl=en">Ricky Papudi</a></p>
             </div>
             <!-- Copyright -->
 
           </footer>
     </section>
  
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
