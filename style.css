@@ -30,6 +30,11 @@ html, body {
 .large-rp{
     font-size: 64px;
 }
+
+.medium-rp{
+    font-size: 50px;
+}
+
 .bg-rp-yellow{
     background:#FCD843;
     color:#000000;
